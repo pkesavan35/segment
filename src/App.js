@@ -96,12 +96,12 @@ export default function App() {
       <Modal show={show} onHide={handleClose}>
         <form onSubmit={handleFromSubmit}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Saving Segment</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <InputGroup className="mb-3">
               <Form.Control
-                placeholder="segment_name"
+                placeholder="name of the segment"
                 aria-label="Segment Name"
                 aria-describedby="basic-addon1"
                 name="segment_name"
@@ -141,7 +141,7 @@ export default function App() {
             ))}
             <br />
             <a type="button" href="#/" onClick={handleAddFields}>
-              + Add schema to Segment
+              + Add New Schema
             </a>
           </Modal.Body>
           <Modal.Footer>
